@@ -30,6 +30,14 @@ body::before {
   z-index: -1;
 }
 
+@media (max-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+    background-size: 300% auto;
+    background-position: top right;
+  }
+}
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -213,9 +221,6 @@ body.index-page .navbar {
 }
 
 
-
-
-
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -391,9 +396,7 @@ section .container {
 }
 
 @media (max-width: 768px) {
-  section {
-    top: 120px;
-  }
+
 
   section.section-show {
     top: 80px;
